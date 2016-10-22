@@ -43,15 +43,15 @@ configure :development do
   activate :livereload if ENV['LIVE_RELOAD']
 end
 
-# http://opendevise.github.io/opendevise.io
+# http://opendevise.github.io/opendevise.com
 #configure :prelaunch do
 #  # Temporarily set asset host until we switch to the top-level domain
-#  #activate :asset_host, host: '/opendevise.io', sources: %w(.html)
-#  activate :asset_host, host: Proc.new {|asset| (asset.start_with? '//') ? '' : '/opendevise.io' }, sources: %w(.html)
+#  #activate :asset_host, host: '/opendevise.com', sources: %w(.html)
+#  activate :asset_host, host: Proc.new {|asset| (asset.start_with? '//') ? '' : '/opendevise.com' }, sources: %w(.html)
 #end
 
 # NOTE: The `build` command defaults to the :production environment.
-# http://opendevise.io
+# http://opendevise.com
 configure :production do
   config.slim[:indent] = ''
   require_relative 'lib/css_compressor'

@@ -1,6 +1,6 @@
 - page_title = current_page.data.title || config.site_title
 - page_path = current_page.request_path.sub /\/index.html$/, ''
-- page_image = 'http://opendevise.io/img/opendevise-icon-og.png'
+- page_image = 'http://opendevise.com/img/opendevise-icon-og.png'
 doctype 5
 html lang='en'
   head
@@ -22,7 +22,7 @@ html lang='en'
     title = page_title
     - if app.environment? :production
       = "\n" if pretty?
-      |<script>!function(l,o,d){if(l.host==o+".github.io"){l.replace(l.protocol+"//"+d+l.pathname.replace(new RegExp("^/"+d.replace(".","\\.")+"/"),"/")+l.search+l.hash)}}(location,"opendevise","opendevise.io")</script>
+      |<script>!function(l,o,d){if(l.host==o+".github.io"){l.replace(l.protocol+"//"+d+l.pathname.replace(new RegExp("^/"+d.replace(".","\\.")+"/"),"/")+l.search+l.hash)}}(location,"opendevise","opendevise.com")</script>
     = "\n" if pretty?
     = (stylesheet_link_tag :site).sub(' type="text/css"', '').sub(' />', '>')
   body.antialiased class = page_classes
