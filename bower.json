@@ -4,6 +4,7 @@
   "private": "true",
   "dependencies": {
     "font-awesome": "~4.4.0",
-    "foundation": "zurb/foundation#~5.5.3"
+    "foundation": "zurb/foundation#~5.5.3",
+    "jquery": "~2.2.4"
   }
 }
